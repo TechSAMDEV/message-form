@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    box-shadow: 0 0 5px hsla(0, 0%, 10%, 0.5);
+    padding: 20px;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsla(350, 40%, 90%, 0.8);
+}
+
+form .head {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #e5122e;
+}
+
+form .name {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+form .message {
+    margin-top: 10px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+form button {
+    border: none;
+    background-color: hsl(352, 85%, 48%);
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background-color: hsl(352, 85%, 40%);
+}
+
+#notification-container {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: hsla(350, 40%, 90%, 0.8);
+    color: #e5122e;
+    border-radius: 10px;
+    box-shadow: 0 0 5px hsla(350, 40%, 90%, 0.8);
+    display: none;
+}
+
+#notification-container .container {
+    position: relative;
+}
+
+#notification-container .fa {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}

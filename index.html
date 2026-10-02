@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+
+    <form action="https://formspree.io/f/xgavbokp" method="POST">
+        <div class="head">
+            <h3>MESSAGE ME</h3>
+        </div>
+        <!-- username -->
+        <div class="name">
+            <label for="username">Enter your name:</label> <br>
+            <input type="text" placeholder="username" id="username" name="username" required>
+        </div>
+
+        <!-- user email -->
+        <div class="email">
+            <label for="email">Enter your Email:</label> <br>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+        </div>
+
+        <!-- user message -->
+        <div class="message">
+            <textarea name="message" id="message" placeholder="enter message" rows="10" cols="23" required></textarea>
+        </div>
+
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+    <!-- notification message -->
+    <div id="notification-container">
+        <div class="container">
+            <i id="close" class="fa fa-x"></i>
+            <p id="notification-message">Message sent successfully</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
