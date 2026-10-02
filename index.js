@@ -6,11 +6,13 @@ form.addEventListener("submit", async (e) => {
     // 1. Stop the page from reloading instantly
     e.preventDefault();
 
+    // collect all the input field
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const msgContent = document.getElementById("message").value.trim();
+    const phoneNo = document.getElementById("phone-no").value.trim();
 
-    if (!username || !email || !msgContent) {
+    if (!username && !email && !msgContent && !phoneNo) {
         alert("Please fill in all fields");
         return;
     }
@@ -43,6 +45,6 @@ form.addEventListener("submit", async (e) => {
 
 // close button for the notification message
 const closebtn = document.getElementById("close");
-closebtn.onclick = function() {
+closebtn.onclick = function () {
     notification.style.display = "none";
 }

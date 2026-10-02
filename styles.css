@@ -36,8 +36,13 @@ form label {
     color: #666;
 }
 
+form .phone-no {
+    margin-bottom: 10px;
+}
+
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
     padding: 5px 10px;
     border: none;
     outline: none;
